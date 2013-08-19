@@ -24,6 +24,7 @@ function render(array) {
     body.appendChild(container)
 }
 
+// Возвращает сумму факториалов чисел из массива
 function getSum(array) {
     var sum = 0;
 
@@ -40,7 +41,7 @@ function doSomeMagic() {
         srt,
         sum;
 
-    for (var i = 0; i <= 9999999; i++) {
+    for (var i = 0; i <= max; i++) {
         str = i.toString();
         sum = getSum(str.split(""));
 
@@ -52,11 +53,16 @@ function doSomeMagic() {
     render(results);
 }
 
+
+// Функция возвращает максимально-возможное число,
+// которое может удовлетворять условиям задачи.
 function getMaxNumber() {
     var array = [],
         length = 0,
         max;
 
+    // Количество цифр в максимальной сумме факториалов
+    // должно быть >= длинны числа
     while ((length*factorial(9)).toString().length >= length) {
         length++;
     }
