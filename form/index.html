@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="#">
+    <table>
+      <tr>
+        <td colspan="2">
+          <h3>Заполните анкету</h3>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="left-column">
+          <em>Вопрос 1</em>
+        </td>
+        <td>
+          <b>
+            <p>Год рождения</p>
+          </b>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <textarea cols="50" rows="4"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td class="separate" colspan="2">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="left-column">
+          <em>Вопрос 2</em>
+        </td>
+        <td>
+          <b>
+            <p>Город, в котором вы живёте.</p>
+          </b>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <textarea cols="50" rows="4"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td class="separate" colspan="2">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="2">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <h3>Расскажи нам о себе</h3>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="left-column">
+          Резюме
+        </td>
+        <td>
+          <input type="file" class="upload-file">
+        </td>
+      </tr>
+      <tr>
+        <td class="left-column">
+          Телефон
+        </td>
+        <td>
+          <input type="text">
+          <div class="note">Пожалуйста, укажите код города</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="left-column">
+          <b>E-mail</b>
+        </td>
+        <td>
+          <input type="text">
+          <span class="dotted">some-mail@yandex.ru</span>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          Откуда вы узнали о нашем предложении?
+           <p>
+            <select>
+              <option value="1" selected>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </p>
+          <p>
+            <input type="checkbox">
+            <b>Я даю свое согласие на передачу в ООО «ЯНДЕКС» резюме и/или анкеты, содержащих мои персональные данные, и согласен с тем, что они будут храниться в ООО «ЯНДЕКС» в течение 5 лет и будут обрабатываться исключительно для целей предложения мне вакансий группы компаний «ЯНДЕКС», в соответствии с Федеральным законом «О персональных данных».</b>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="buttons">
+          <input type="submit">
+          <button>Очистить</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
